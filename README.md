@@ -20,13 +20,12 @@ This program performs end-to-end inventory operations on the Northwind Database 
 
 This program is based on Client Server Architecture applied with the use of Socket Programming on the Northwind System. Server System is developed to remotely cater to the needs of Database Administrators based on a user defined protocol (Order3901/1.0). This project works with the OrderClient and OrderConnection classes which are predefined. Following below are the possible operations via this protocol:
 
-1. AUTH
-2. NEW
-3. ADD
-4. LIST (Customer)
-5. LIST (Product)
-6. LIST (Orders)
-7. LOGOUT
-8. DROP (Cookie)
-
+  • AUTH – employee signs in
+  • LOGOUT – employee signs out
+  • LIST – return some of the state of the order to the
+  client
+  • NEW – start a new order
+  • ADD – add a product to the current order
+  • ORDER – place the current order
+  • DROP – abandon the current order
 
